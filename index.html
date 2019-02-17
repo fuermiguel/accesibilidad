@@ -136,9 +136,9 @@
         </div </center>
         <br><br>
         <audio autoplay loop controls>
-  <source src="audio/cancion.mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
+            <source src="audio/cancion.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
         <footer class="container-fluid text-center">
             <details>
                 <summary>Copyright 1999-2019.</summary>
@@ -146,7 +146,25 @@ Your browser does not support the audio element.
                 <p>All content and graphics on this web site are the property of the Miguel González Canales and Enrique San Blas García.</p>
             </details>
         </footer>
+        <script>
+            let video = document.getElementsByTagName('video')[0];
 
+            video.addEventListener('mouseover', function() {
+                this.play();
+            })
+            video.addEventListener('mouseout', function() {
+                this.pause();
+            })
+
+            let audio = document.getElementsByTagName('audio')[0];
+
+            audio.addEventListener('mouseover', function() {
+                this.play();
+            })
+            audio.addEventListener('mouseout', function() {
+                this.pause();
+            })
+        </script>
 </body>
 
 </html>
