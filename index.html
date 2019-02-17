@@ -1,136 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-  <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    }
-    
-    /* Remove the jumbotron's default bottom margin */ 
-     .jumbotron {
-      margin-bottom: 0;
-      color: #fff;
-    }
-    .banner {
-      height: 400px;
-      width: 100%;
-      max-height: 50%;
-      max-width: 100%;
-      background-image: url("img/banner.jpg");
-      background-size: cover;
-    }
-    .dtexto {
-      background: rgba(200,200,200,0.6);  
-    }
-      
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+    <title>Canarian food</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        /* Remove the jumbotron's default bottom margin */
+        
+        .jumbotron {
+            margin-bottom: 0;
+            color: #fff;
+        }
+        
+        .banner {
+            height: 400px;
+            width: 100%;
+            max-height: 50%;
+            max-width: 100%;
+            background-image: url("img/banner.jpg");
+            background-size: cover;
+        }
+        
+        .dtexto {
+            background: rgba(200, 200, 200, 0.6);
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="jumbotron banner">
-  <div class="container text-center">
-        <div class="dtexto">
-          <h1>Canarian food</h1>      
-          <p>The best of the canaries</p>
-      </div>
-        
-      
-  </div>
-</div>
+    <div class="jumbotron banner">
+        <div class="container text-center">
+            <div class="dtexto">
+                <h1>Canarian food</h1>
+                <p>The best of the canaries</p>
+            </div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading"><center><a onclick="responsiveVoice.speak('Great Variety');" type="button" value="Play" style="color:#f2f2f2">Great Variety</a></center></div>
-        <div class="panel-body"><img src="img/surtido.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">	
-          Try the different flavors of traditional Canarian food.
-          </br><center><input onclick="responsiveVoice.speak('Try the different flavors of traditional Canarian food.');" type="button" value="Play" /></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <center><a onclick="responsiveVoice.speak('Great Variety');" type="button" value="Play" style="color:#f2f2f2">Great Variety</a></center>
+                    </div>
+                    <div class="panel-body"><img src="img/surtido.png" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        Try the different flavors of traditional Canarian food.
+                        </br>
+                        <center><input onclick="responsiveVoice.speak('Try the different flavors of traditional Canarian food.');" type="button" value="Play" /></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <center><a onclick="responsiveVoice.speak('Mojo');" type="button" value="Play" style="color:#f2f2f2">Mojo</a></center>
+                    </div>
+                    <div class="panel-body"><img src="img/mojo.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <center>The mojo and the canary, united forever.
+                            </br><input onclick="responsiveVoice.speak('The mojo and the canary, united forever.');" type="button" value="Play" /></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <center><a onclick="responsiveVoice.speak('gofio');" type="button" value="Play" style="color:#f2f2f2">Gofio</a></center>
+                    </div>
+                    <div class="panel-body"><img src="img/gofio.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <center>gofio, food that strengthens the canary.
+                            </br><input onclick="responsiveVoice.speak('gofio, food that strengthens the canary.');" type="button" value="Play" /></center>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading"><center><a onclick="responsiveVoice.speak('Mojo');" type="button" value="Play" style="color:#f2f2f2">Mojo</a></center></div>
-        <div class="panel-body"><img src="img/mojo.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><center>The mojo and the canary, united forever.
-        </br><input onclick="responsiveVoice.speak('The mojo and the canary, united forever.');" type="button" value="Play" /></center>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading"><center><a onclick="responsiveVoice.speak('gofio');" type="button" value="Play" style="color:#f2f2f2">Gofio</a></center></div>
-        <div class="panel-body"><img src="img/gofio.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer"><center>gofio, food that strengthens the canary.
-        </br><input onclick="responsiveVoice.speak('gofio, food that strengthens the canary.');" type="button" value="Play" /></center>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><br>
+    </div><br>
 
-<center>
-<div class="container">    
-      <div class="panel panel-primary">
-        <div class="panel-heading">Eating Canary Island</div>
-        <div class="panel-body">
-          <video style="width:100%" controls>
+    <center>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Eating Canary Island</div>
+                <div class="panel-body">
+                    <video style="width:100%" controls>
           <source src="videos/comidas.ogv" type="video/mp4"></video>
+                </div>
+                <div class="panel-footer">
+                    <center>Test all our products.
+                        </br><input onclick="responsiveVoice.speak('Test all our products.');" type="button" value="Play" /></center>
+                </div>
+            </div>
         </div>
-        <div class="panel-footer"><center>Test all our products.
-          </br><input onclick="responsiveVoice.speak('Test all our products.');" type="button" value="Play" /></center></div>
-      </div>
-    </div>
-  
-</div
-</center>
-<br><br>
-<audio autoplay loop controls>
+
+        </div </center>
+        <br><br>
+        <audio autoplay loop controls>
   <source src="audio/cancion.mp3" type="audio/mp3">
 Your browser does not support the audio element.
 </audio>
-<footer class="container-fluid text-center">
-  <details>
-    <summary>Copyright 1999-2019.</summary>
-    <p> - by Miguel González Canales and Enrique San Blas García. All Rights Reserved.</p>
-    <p>All content and graphics on this web site are the property of the Miguel González Canales and Enrique San Blas García.</p>
-</details> 
-</footer>
+        <footer class="container-fluid text-center">
+            <details>
+                <summary>Copyright 1999-2019.</summary>
+                <p> - by Miguel González Canales and Enrique San Blas García. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the Miguel González Canales and Enrique San Blas García.</p>
+            </details>
+        </footer>
 
 </body>
+
 </html>
